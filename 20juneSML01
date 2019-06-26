@@ -1,0 +1,44 @@
+
+
+Open In Colab
+In [0]:
+
+import numpy as no
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier  # decisionTree classifier only
+
+In [0]:
+
+#this is for apple and orange
+# here smooth is for apple and bumpy is for orange
+features=[[100,0],[120,0],[130,1],[150,1]]
+## here 0 means smooth and 1 means bumpy
+
+In [0]:
+
+# Now arrange accordingly
+label=["apple","apple","orange","orange"]
+
+In [0]:
+
+# calling DecisionTree classifier
+clf=DecisionTreeClassifier()
+
+In [0]:
+
+#now time for training data
+trained=clf.fit(features,label)
+
+In [21]:
+
+# now predicting
+trained.predict([[123,1]])
+
+Out[21]:
+
+array(['apple'], dtype='<U6')
+
+In [0]:
+
+
+
